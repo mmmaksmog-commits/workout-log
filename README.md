@@ -2,7 +2,7 @@
 
 **Журнал силовых тренировок с личными рекордами и графиком прогресса.**
 
-### ▶️ [Открыть](https://mmmaksmog-commits.github.io/workout-log/)
+### ▶️ [Открыть](https://mysik-portfolio.vercel.app/workout-log/)
 
 Работает на телефоне и на ПК, без установки и регистрации.
 
@@ -30,4 +30,4 @@ python3 -m http.server 8000
 
 ---
 
-Часть [портфолио](https://mmmaksmog-commits.github.io/).
+Часть [портфолио](https://mysik-portfolio.vercel.app/).
