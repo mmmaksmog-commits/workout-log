@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Тренировки</title>
+  <meta name="description" content="Журнал тренировок: упражнения, подходы, личные рекорды и график прогресса.">
+  <meta name="theme-color" content="#0f0f10">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <h1>ТРЕНИРОВКИ</h1>
+      <div class="week-stats" id="weekStats"></div>
+    </header>
+
+    <nav class="tabs" role="tablist">
+      <button class="tab is-active" data-tab="today">Сегодня</button>
+      <button class="tab" data-tab="history">История</button>
+      <button class="tab" data-tab="progress">Прогресс</button>
+    </nav>
+
+    <section class="panel" id="today"></section>
+    <section class="panel" id="history" hidden></section>
+    <section class="panel" id="progress" hidden>
+      <select id="exSelect" class="select" aria-label="Упражнение"></select>
+      <div class="prs" id="prs"></div>
+      <div class="chart-card">
+        <h3>Расчётный максимум (1ПМ), кг</h3>
+        <div id="chart" class="chart"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="sheet" id="picker" hidden>
+    <div class="sheet__box">
+      <h2>Добавить упражнение</h2>
+      <input class="select" id="exSearch" placeholder="Поиск или новое упражнение" autocomplete="off">
+      <div class="ex-list" id="exList"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" hidden></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
